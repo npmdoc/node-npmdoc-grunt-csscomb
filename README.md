@@ -1,9 +1,14 @@
-# api documentation for  [grunt-csscomb (v3.1.1)](https://github.com/csscomb/grunt-csscomb)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-csscomb.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-csscomb) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb)
+# npmdoc-grunt-csscomb
+
+#### api documentation for  [grunt-csscomb (v3.1.1)](https://github.com/csscomb/grunt-csscomb)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-csscomb.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-csscomb) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb)
+
 #### The grunt plugin for sorting CSS properties in specific order.
 
-[![NPM](https://nodei.co/npm/grunt-csscomb.png?downloads=true)](https://www.npmjs.com/package/grunt-csscomb)
+[![NPM](https://nodei.co/npm/grunt-csscomb.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-csscomb)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-csscomb_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-csscomb/build/screenCapture.npmPackageListing.svg)
 
@@ -23,7 +28,6 @@
     "contributors": [
         {
             "name": "Shogo Sensui",
-            "email": "shogo.sensui@gmail.com",
             "url": "http://1000ch.net/"
         }
     ],
@@ -63,12 +67,10 @@
     "main": "Gruntfile.js",
     "maintainers": [
         {
-            "name": "t32k",
-            "email": "ijok.ijok@gmail.com"
+            "name": "t32k"
         },
         {
-            "name": "tonyganch",
-            "email": "tonyganch+github@gmail.com"
+            "name": "tonyganch"
         }
     ],
     "name": "grunt-csscomb",
@@ -76,7 +78,6 @@
     "peerDependencies": {
         "grunt": ">=0.4.0"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/csscomb/grunt-csscomb.git"
@@ -87,16 +88,6 @@
     "version": "3.1.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-csscomb](#apidoc.module.grunt-csscomb)
-
-
-
-# <a name="apidoc.module.grunt-csscomb"></a>[module grunt-csscomb](#apidoc.module.grunt-csscomb)
 
 
 
