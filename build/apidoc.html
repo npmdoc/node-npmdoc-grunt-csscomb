@@ -61,12 +61,106 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-csscomb">module grunt-csscomb</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-csscomb.grunt-csscomb">
+            function <span class="apidocSignatureSpan"></span>grunt-csscomb
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.grunt-csscomb" id="apidoc.module.grunt-csscomb">module grunt-csscomb</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-csscomb.grunt-csscomb" id="apidoc.element.grunt-csscomb.grunt-csscomb">
+        function <span class="apidocSignatureSpan"></span>grunt-csscomb
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">grunt-csscomb = function (grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+        jshint: {
+            all: [
+                &#x27;Gruntfile.js&#x27;,
+                &#x27;tasks/*.js&#x27;,
+                &#x27;&#x3c;%= nodeunit.tests %&#x3e;&#x27;,
+            ],
+            options: {
+                jshintrc: &#x27;.jshintrc&#x27;,
+            },
+        },
+
+        // Before generating any new files, remove any previously-created files.
+        clean: {
+            tests: [&#x27;test/fixtures/tmp_*.css&#x27;,&#x27;test/fixtures/dest/*.resorted.css&#x27;],
+        },
+
+        // Configuration to be run (and then tested).
+        csscomb: {
+            main: {
+                files: {
+                    &#x27;test/fixtures/tmp_resort.css&#x27;: [&#x27;test/fixtures/style.css&#x27;],
+                }
+            },
+            custom: {
+                options: {
+                    config: &#x27;test/fixtures/sort.json&#x27;
+                },
+                files: {
+                    &#x27;test/fixtures/tmp_customsort.css&#x27;: [&#x27;test/fixtures/style.css&#x27;],
+                }
+            },
+            multiple: {
+                files: {
+                    &#x27;test/fixtures/tmp_multi1.css&#x27;: [&#x27;test/fixtures/multi1.css&#x27;],
+                    &#x27;test/fixtures/tmp_multi2.css&#x27;: [&#x27;test/fixtures/multi2.css&#x27;],
+                }
+            },
+            dynamic_mappings: {
+                expand: true,
+                cwd: &#x27;test/fixtures/dest/&#x27;,
+                src: [&#x27;*.css&#x27;, &#x27;!*.resorted.css&#x27;],
+                dest: &#x27;test/fixtures/dest/&#x27;,
+                ext: &#x27;.resorted.css&#x27;
+            }
+        },
+
+        // Unit tests.
+        nodeunit: {
+            tests: [&#x27;test/*_test.js&#x27;],
+        },
+
+    });
+
+    // Actually load this plugin&#x27;s task(s).
+    grunt.loadTasks(&#x27;tasks&#x27;);
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
+    grunt.loadNpmTasks(&#x27;grunt-contrib-clean&#x27;);
+    grunt.loadNpmTasks(&#x27;grunt-contrib-nodeunit&#x27;);
+
+    // Whenever the &#x22;test&#x22; task is run, first clean the &#x22;tmp&#x22; dir, then run this
+    // plugin&#x27;s task(s), then test the result.
+    grunt.registerTask(&#x27;test&#x27;, [&#x27;clean&#x27;, &#x27;csscomb&#x27;, &#x27;nodeunit&#x27;]);
+
+    // By default, lint and run all tests.
+    grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;test&#x27;]);
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
