@@ -1,6 +1,6 @@
 # npmdoc-grunt-csscomb
 
-#### api documentation for  [grunt-csscomb (v3.1.1)](https://github.com/csscomb/grunt-csscomb)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-csscomb.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-csscomb) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb)
+#### basic api documentation for  [grunt-csscomb (v3.1.1)](https://github.com/csscomb/grunt-csscomb)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-csscomb.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-csscomb) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-csscomb)
 
 #### The grunt plugin for sorting CSS properties in specific order.
 
@@ -85,7 +85,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "3.1.1"
+    "version": "3.1.1",
+    "bin": {}
 }
 ```
 
